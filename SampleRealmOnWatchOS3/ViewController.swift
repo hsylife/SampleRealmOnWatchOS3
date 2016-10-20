@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let realm = try! Realm()
+        if let myField = realm.objects(Field.self).first{
+            textField.text = myField.text
+        } else {
+            try! realm.write {
+                realm.add(Field())
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +32,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func editingChanged(_ sender: UITextField) {
         print("changed")
+        let realm = try! Realm()
+        if let myField = realm.objects(Field.self).first{
+            try! realm.write {
+                myField.text = textField.text
+            }
+
+        }
     }
 }
 
