@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA5F0E64E4CB5C62514650A /* Pods_SampleRealmOnWatchOS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */; };
 		D64D9C261DB8F5BF00E17C6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D9C251DB8F5BF00E17C6B /* AppDelegate.swift */; };
 		D64D9C281DB8F5BF00E17C6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D9C271DB8F5BF00E17C6B /* ViewController.swift */; };
 		D64D9C2B1DB8F5BF00E17C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D9C291DB8F5BF00E17C6B /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRealmOnWatchOS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3.debug.xcconfig"; sourceTree = "<group>"; };
+		6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleRealmOnWatchOS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64D9C221DB8F5BF00E17C6B /* SampleRealmOnWatchOS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleRealmOnWatchOS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64D9C251DB8F5BF00E17C6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64D9C271DB8F5BF00E17C6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D64D9C2C1DB8F5BF00E17C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D64D9C2F1DB8F5BF00E17C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64D9C311DB8F5C000E17C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DECA00C7019128CBA3B76F75 /* Pods-SampleRealmOnWatchOS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRealmOnWatchOS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA5F0E64E4CB5C62514650A /* Pods_SampleRealmOnWatchOS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7666C1AD1F7868779F7F1A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB213B4E5B6E4E4012D78B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */,
+				DECA00C7019128CBA3B76F75 /* Pods-SampleRealmOnWatchOS3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D64D9C191DB8F5BF00E17C6B = {
 			isa = PBXGroup;
 			children = (
 				D64D9C241DB8F5BF00E17C6B /* SampleRealmOnWatchOS3 */,
 				D64D9C231DB8F5BF00E17C6B /* Products */,
+				AFB213B4E5B6E4E4012D78B4 /* Pods */,
+				7666C1AD1F7868779F7F1A2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D64D9C341DB8F5C000E17C6B /* Build configuration list for PBXNativeTarget "SampleRealmOnWatchOS3" */;
 			buildPhases = (
+				1027311F5346BC12E65A1F57 /* [CP] Check Pods Manifest.lock */,
 				D64D9C1E1DB8F5BF00E17C6B /* Sources */,
 				D64D9C1F1DB8F5BF00E17C6B /* Frameworks */,
 				D64D9C201DB8F5BF00E17C6B /* Resources */,
+				9B5D3E1B9490AFDDD2DC62F0 /* [CP] Embed Pods Frameworks */,
+				410BDC31D7D8E220971F9E55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1027311F5346BC12E65A1F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		410BDC31D7D8E220971F9E55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5D3E1B9490AFDDD2DC62F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D64D9C1E1DB8F5BF00E17C6B /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		D64D9C351DB8F5C000E17C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94CEFW22UD;
@@ -272,6 +348,7 @@
 		};
 		D64D9C361DB8F5C000E17C6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECA00C7019128CBA3B76F75 /* Pods-SampleRealmOnWatchOS3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94CEFW22UD;
@@ -302,6 +379,7 @@
 				D64D9C361DB8F5C000E17C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
