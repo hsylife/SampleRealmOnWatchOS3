@@ -14,7 +14,56 @@
 		D64D9C2D1DB8F5BF00E17C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64D9C2C1DB8F5BF00E17C6B /* Assets.xcassets */; };
 		D64D9C301DB8F5BF00E17C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D9C2E1DB8F5BF00E17C6B /* LaunchScreen.storyboard */; };
 		D64D9C381DB8FC4400E17C6B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D9C371DB8FC4400E17C6B /* Field.swift */; };
+		D6FA44B01DBA2C6C000DCF21 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA44AE1DBA2C6C000DCF21 /* Interface.storyboard */; };
+		D6FA44B21DBA2C6C000DCF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FA44B11DBA2C6C000DCF21 /* Assets.xcassets */; };
+		D6FA44B91DBA2C6D000DCF21 /* SampleWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6FA44B81DBA2C6D000DCF21 /* SampleWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6FA44BE1DBA2C6D000DCF21 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA44BD1DBA2C6D000DCF21 /* InterfaceController.swift */; };
+		D6FA44C01DBA2C6D000DCF21 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA44BF1DBA2C6D000DCF21 /* ExtensionDelegate.swift */; };
+		D6FA44C21DBA2C6D000DCF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FA44C11DBA2C6D000DCF21 /* Assets.xcassets */; };
+		D6FA44C61DBA2C6D000DCF21 /* SampleWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6FA44AC1DBA2C6C000DCF21 /* SampleWatchApp.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6FA44BA1DBA2C6D000DCF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64D9C1A1DB8F5BF00E17C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6FA44B71DBA2C6D000DCF21;
+			remoteInfo = "SampleWatchApp Extension";
+		};
+		D6FA44C41DBA2C6D000DCF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64D9C1A1DB8F5BF00E17C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6FA44AB1DBA2C6C000DCF21;
+			remoteInfo = SampleWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6FA44A91DBA2C26000DCF21 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D6FA44C61DBA2C6D000DCF21 /* SampleWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FA44CA1DBA2C6D000DCF21 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6FA44B91DBA2C6D000DCF21 /* SampleWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRealmOnWatchOS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -27,6 +76,24 @@
 		D64D9C2F1DB8F5BF00E17C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64D9C311DB8F5C000E17C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64D9C371DB8FC4400E17C6B /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		D6FA44861DBA2C26000DCF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D6FA44881DBA2C26000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6FA448A1DBA2C26000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FA44951DBA2C26000DCF21 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D6FA44961DBA2C26000DCF21 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D6FA44981DBA2C26000DCF21 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D6FA449A1DBA2C26000DCF21 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D6FA449C1DBA2C26000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6FA449E1DBA2C26000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FA44AC1DBA2C6C000DCF21 /* SampleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FA44AF1DBA2C6C000DCF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D6FA44B11DBA2C6C000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6FA44B31DBA2C6C000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FA44B81DBA2C6D000DCF21 /* SampleWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SampleWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FA44BD1DBA2C6D000DCF21 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D6FA44BF1DBA2C6D000DCF21 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D6FA44C11DBA2C6D000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6FA44C31DBA2C6D000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DECA00C7019128CBA3B76F75 /* Pods-SampleRealmOnWatchOS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRealmOnWatchOS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +103,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA5F0E64E4CB5C62514650A /* Pods_SampleRealmOnWatchOS3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FA44B51DBA2C6D000DCF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				D64D9C241DB8F5BF00E17C6B /* SampleRealmOnWatchOS3 */,
+				D6FA44841DBA2C26000DCF21 /* SampleWatchApp */,
+				D6FA44931DBA2C26000DCF21 /* SampleWatchApp Extension */,
+				D6FA44AD1DBA2C6C000DCF21 /* SampleWatchApp */,
+				D6FA44BC1DBA2C6D000DCF21 /* SampleWatchApp Extension */,
 				D64D9C231DB8F5BF00E17C6B /* Products */,
 				AFB213B4E5B6E4E4012D78B4 /* Pods */,
 				7666C1AD1F7868779F7F1A2C /* Frameworks */,
@@ -73,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				D64D9C221DB8F5BF00E17C6B /* SampleRealmOnWatchOS3.app */,
+				D6FA44AC1DBA2C6C000DCF21 /* SampleWatchApp.app */,
+				D6FA44B81DBA2C6D000DCF21 /* SampleWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +171,58 @@
 			path = SampleRealmOnWatchOS3;
 			sourceTree = "<group>";
 		};
+		D6FA44841DBA2C26000DCF21 /* SampleWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA44851DBA2C26000DCF21 /* Interface.storyboard */,
+				D6FA44881DBA2C26000DCF21 /* Assets.xcassets */,
+				D6FA448A1DBA2C26000DCF21 /* Info.plist */,
+			);
+			path = SampleWatchApp;
+			sourceTree = "<group>";
+		};
+		D6FA44931DBA2C26000DCF21 /* SampleWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA44961DBA2C26000DCF21 /* InterfaceController.swift */,
+				D6FA44981DBA2C26000DCF21 /* ExtensionDelegate.swift */,
+				D6FA449A1DBA2C26000DCF21 /* NotificationController.swift */,
+				D6FA449C1DBA2C26000DCF21 /* Assets.xcassets */,
+				D6FA449E1DBA2C26000DCF21 /* Info.plist */,
+				D6FA44941DBA2C26000DCF21 /* Supporting Files */,
+			);
+			path = "SampleWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		D6FA44941DBA2C26000DCF21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA44951DBA2C26000DCF21 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6FA44AD1DBA2C6C000DCF21 /* SampleWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA44AE1DBA2C6C000DCF21 /* Interface.storyboard */,
+				D6FA44B11DBA2C6C000DCF21 /* Assets.xcassets */,
+				D6FA44B31DBA2C6C000DCF21 /* Info.plist */,
+			);
+			path = SampleWatchApp;
+			sourceTree = "<group>";
+		};
+		D6FA44BC1DBA2C6D000DCF21 /* SampleWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA44BD1DBA2C6D000DCF21 /* InterfaceController.swift */,
+				D6FA44BF1DBA2C6D000DCF21 /* ExtensionDelegate.swift */,
+				D6FA44C11DBA2C6D000DCF21 /* Assets.xcassets */,
+				D6FA44C31DBA2C6D000DCF21 /* Info.plist */,
+			);
+			path = "SampleWatchApp Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,15 +236,51 @@
 				D64D9C201DB8F5BF00E17C6B /* Resources */,
 				9B5D3E1B9490AFDDD2DC62F0 /* [CP] Embed Pods Frameworks */,
 				410BDC31D7D8E220971F9E55 /* [CP] Copy Pods Resources */,
+				D6FA44A91DBA2C26000DCF21 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6FA44C51DBA2C6D000DCF21 /* PBXTargetDependency */,
 			);
 			name = SampleRealmOnWatchOS3;
 			productName = SampleRealmOnWatchOS3;
 			productReference = D64D9C221DB8F5BF00E17C6B /* SampleRealmOnWatchOS3.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D6FA44AB1DBA2C6C000DCF21 /* SampleWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FA44CB1DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp" */;
+			buildPhases = (
+				D6FA44AA1DBA2C6C000DCF21 /* Resources */,
+				D6FA44CA1DBA2C6D000DCF21 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6FA44BB1DBA2C6D000DCF21 /* PBXTargetDependency */,
+			);
+			name = SampleWatchApp;
+			productName = SampleWatchApp;
+			productReference = D6FA44AC1DBA2C6C000DCF21 /* SampleWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D6FA44B71DBA2C6D000DCF21 /* SampleWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FA44C71DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp Extension" */;
+			buildPhases = (
+				D6FA44B41DBA2C6D000DCF21 /* Sources */,
+				D6FA44B51DBA2C6D000DCF21 /* Frameworks */,
+				D6FA44B61DBA2C6D000DCF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SampleWatchApp Extension";
+			productName = "SampleWatchApp Extension";
+			productReference = D6FA44B81DBA2C6D000DCF21 /* SampleWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -125,6 +293,16 @@
 				ORGANIZATIONNAME = "Yuta Hoshino";
 				TargetAttributes = {
 					D64D9C211DB8F5BF00E17C6B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 94CEFW22UD;
+						ProvisioningStyle = Automatic;
+					};
+					D6FA44AB1DBA2C6C000DCF21 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 94CEFW22UD;
+						ProvisioningStyle = Automatic;
+					};
+					D6FA44B71DBA2C6D000DCF21 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 94CEFW22UD;
 						ProvisioningStyle = Automatic;
@@ -145,6 +323,8 @@
 			projectRoot = "";
 			targets = (
 				D64D9C211DB8F5BF00E17C6B /* SampleRealmOnWatchOS3 */,
+				D6FA44AB1DBA2C6C000DCF21 /* SampleWatchApp */,
+				D6FA44B71DBA2C6D000DCF21 /* SampleWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +337,23 @@
 				D64D9C301DB8F5BF00E17C6B /* LaunchScreen.storyboard in Resources */,
 				D64D9C2D1DB8F5BF00E17C6B /* Assets.xcassets in Resources */,
 				D64D9C2B1DB8F5BF00E17C6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FA44AA1DBA2C6C000DCF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FA44B21DBA2C6C000DCF21 /* Assets.xcassets in Resources */,
+				D6FA44B01DBA2C6C000DCF21 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FA44B61DBA2C6D000DCF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FA44C21DBA2C6D000DCF21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +418,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6FA44B41DBA2C6D000DCF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FA44C01DBA2C6D000DCF21 /* ExtensionDelegate.swift in Sources */,
+				D6FA44BE1DBA2C6D000DCF21 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6FA44BB1DBA2C6D000DCF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6FA44B71DBA2C6D000DCF21 /* SampleWatchApp Extension */;
+			targetProxy = D6FA44BA1DBA2C6D000DCF21 /* PBXContainerItemProxy */;
+		};
+		D6FA44C51DBA2C6D000DCF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6FA44AB1DBA2C6C000DCF21 /* SampleWatchApp */;
+			targetProxy = D6FA44C41DBA2C6D000DCF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D64D9C291DB8F5BF00E17C6B /* Main.storyboard */ = {
@@ -238,6 +457,22 @@
 				D64D9C2F1DB8F5BF00E17C6B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6FA44851DBA2C26000DCF21 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6FA44861DBA2C26000DCF21 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		D6FA44AE1DBA2C6C000DCF21 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6FA44AF1DBA2C6C000DCF21 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,6 +601,76 @@
 			};
 			name = Release;
 		};
+		D6FA44C81DBA2C6D000DCF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 94CEFW22UD;
+				INFOPLIST_FILE = "SampleWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ge-nie-inc.SampleRealmOnWatchOS3.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D6FA44C91DBA2C6D000DCF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 94CEFW22UD;
+				INFOPLIST_FILE = "SampleWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ge-nie-inc.SampleRealmOnWatchOS3.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		D6FA44CC1DBA2C6D000DCF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94CEFW22UD;
+				IBSC_MODULE = SampleWatchApp_Extension;
+				INFOPLIST_FILE = SampleWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ge-nie-inc.SampleRealmOnWatchOS3.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D6FA44CD1DBA2C6D000DCF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94CEFW22UD;
+				IBSC_MODULE = SampleWatchApp_Extension;
+				INFOPLIST_FILE = SampleWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ge-nie-inc.SampleRealmOnWatchOS3.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +691,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D6FA44C71DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FA44C81DBA2C6D000DCF21 /* Debug */,
+				D6FA44C91DBA2C6D000DCF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6FA44CB1DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FA44CC1DBA2C6D000DCF21 /* Debug */,
+				D6FA44CD1DBA2C6D000DCF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
