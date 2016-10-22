@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BA5F0E64E4CB5C62514650A /* Pods_SampleRealmOnWatchOS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */; };
+		2BA7106F048B04CA138A9059 /* Pods_SampleWatchApp_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C92587F1D08239A0D5BF537 /* Pods_SampleWatchApp_Extension.framework */; };
 		D64D9C261DB8F5BF00E17C6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D9C251DB8F5BF00E17C6B /* AppDelegate.swift */; };
 		D64D9C281DB8F5BF00E17C6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D9C271DB8F5BF00E17C6B /* ViewController.swift */; };
 		D64D9C2B1DB8F5BF00E17C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D9C291DB8F5BF00E17C6B /* Main.storyboard */; };
@@ -66,8 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0226A02E37F1B9D248489E94 /* Pods_SampleWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C92587F1D08239A0D5BF537 /* Pods_SampleWatchApp_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleWatchApp_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRealmOnWatchOS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3.debug.xcconfig"; sourceTree = "<group>"; };
+		68F6A394A8469A2EC366E2CD /* Pods-SampleWatchApp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleWatchApp Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleWatchApp Extension/Pods-SampleWatchApp Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleRealmOnWatchOS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A348A8557FD9AE12E1CDFFC9 /* Pods-SampleWatchApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleWatchApp Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleWatchApp Extension/Pods-SampleWatchApp Extension.release.xcconfig"; sourceTree = "<group>"; };
 		D64D9C221DB8F5BF00E17C6B /* SampleRealmOnWatchOS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleRealmOnWatchOS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64D9C251DB8F5BF00E17C6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64D9C271DB8F5BF00E17C6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,15 +81,6 @@
 		D64D9C2F1DB8F5BF00E17C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64D9C311DB8F5C000E17C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64D9C371DB8FC4400E17C6B /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		D6FA44861DBA2C26000DCF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		D6FA44881DBA2C26000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6FA448A1DBA2C26000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FA44951DBA2C26000DCF21 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		D6FA44961DBA2C26000DCF21 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		D6FA44981DBA2C26000DCF21 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		D6FA449A1DBA2C26000DCF21 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		D6FA449C1DBA2C26000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6FA449E1DBA2C26000DCF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FA44AC1DBA2C6C000DCF21 /* SampleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FA44AF1DBA2C6C000DCF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D6FA44B11DBA2C6C000DCF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		117BB7F2E40ED9F808808A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D64D9C1F1DB8F5BF00E17C6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA7106F048B04CA138A9059 /* Pods_SampleWatchApp_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				6B34CAC17DCA059A87B2123A /* Pods_SampleRealmOnWatchOS3.framework */,
+				3C92587F1D08239A0D5BF537 /* Pods_SampleWatchApp_Extension.framework */,
+				0226A02E37F1B9D248489E94 /* Pods_SampleWatchApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 			children = (
 				4DFAF97E09387B92C055753A /* Pods-SampleRealmOnWatchOS3.debug.xcconfig */,
 				DECA00C7019128CBA3B76F75 /* Pods-SampleRealmOnWatchOS3.release.xcconfig */,
+				68F6A394A8469A2EC366E2CD /* Pods-SampleWatchApp Extension.debug.xcconfig */,
+				A348A8557FD9AE12E1CDFFC9 /* Pods-SampleWatchApp Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -137,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				D64D9C241DB8F5BF00E17C6B /* SampleRealmOnWatchOS3 */,
-				D6FA44841DBA2C26000DCF21 /* SampleWatchApp */,
-				D6FA44931DBA2C26000DCF21 /* SampleWatchApp Extension */,
 				D6FA44AD1DBA2C6C000DCF21 /* SampleWatchApp */,
 				D6FA44BC1DBA2C6D000DCF21 /* SampleWatchApp Extension */,
 				D64D9C231DB8F5BF00E17C6B /* Products */,
@@ -169,37 +175,6 @@
 				D64D9C311DB8F5C000E17C6B /* Info.plist */,
 			);
 			path = SampleRealmOnWatchOS3;
-			sourceTree = "<group>";
-		};
-		D6FA44841DBA2C26000DCF21 /* SampleWatchApp */ = {
-			isa = PBXGroup;
-			children = (
-				D6FA44851DBA2C26000DCF21 /* Interface.storyboard */,
-				D6FA44881DBA2C26000DCF21 /* Assets.xcassets */,
-				D6FA448A1DBA2C26000DCF21 /* Info.plist */,
-			);
-			path = SampleWatchApp;
-			sourceTree = "<group>";
-		};
-		D6FA44931DBA2C26000DCF21 /* SampleWatchApp Extension */ = {
-			isa = PBXGroup;
-			children = (
-				D6FA44961DBA2C26000DCF21 /* InterfaceController.swift */,
-				D6FA44981DBA2C26000DCF21 /* ExtensionDelegate.swift */,
-				D6FA449A1DBA2C26000DCF21 /* NotificationController.swift */,
-				D6FA449C1DBA2C26000DCF21 /* Assets.xcassets */,
-				D6FA449E1DBA2C26000DCF21 /* Info.plist */,
-				D6FA44941DBA2C26000DCF21 /* Supporting Files */,
-			);
-			path = "SampleWatchApp Extension";
-			sourceTree = "<group>";
-		};
-		D6FA44941DBA2C26000DCF21 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6FA44951DBA2C26000DCF21 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D6FA44AD1DBA2C6C000DCF21 /* SampleWatchApp */ = {
@@ -254,6 +229,7 @@
 			buildPhases = (
 				D6FA44AA1DBA2C6C000DCF21 /* Resources */,
 				D6FA44CA1DBA2C6D000DCF21 /* Embed App Extensions */,
+				117BB7F2E40ED9F808808A52 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6FA44C71DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp Extension" */;
 			buildPhases = (
+				254D122A72F6116DD3F32FA5 /* [CP] Check Pods Manifest.lock */,
 				D6FA44B41DBA2C6D000DCF21 /* Sources */,
 				D6FA44B51DBA2C6D000DCF21 /* Frameworks */,
 				D6FA44B61DBA2C6D000DCF21 /* Resources */,
+				143C97DF0C50524A57F72943 /* [CP] Embed Pods Frameworks */,
+				B1F611BF320F642891688DDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,6 +354,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		143C97DF0C50524A57F72943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleWatchApp Extension/Pods-SampleWatchApp Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		254D122A72F6116DD3F32FA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		410BDC31D7D8E220971F9E55 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +412,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleRealmOnWatchOS3/Pods-SampleRealmOnWatchOS3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F611BF320F642891688DDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleWatchApp Extension/Pods-SampleWatchApp Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -457,14 +481,6 @@
 				D64D9C2F1DB8F5BF00E17C6B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D6FA44851DBA2C26000DCF21 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6FA44861DBA2C26000DCF21 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		D6FA44AE1DBA2C6C000DCF21 /* Interface.storyboard */ = {
@@ -603,6 +619,7 @@
 		};
 		D6FA44C81DBA2C6D000DCF21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F6A394A8469A2EC366E2CD /* Pods-SampleWatchApp Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 94CEFW22UD;
@@ -620,6 +637,7 @@
 		};
 		D6FA44C91DBA2C6D000DCF21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A348A8557FD9AE12E1CDFFC9 /* Pods-SampleWatchApp Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 94CEFW22UD;
@@ -699,6 +717,7 @@
 				D6FA44C91DBA2C6D000DCF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6FA44CB1DBA2C6D000DCF21 /* Build configuration list for PBXNativeTarget "SampleWatchApp" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +726,7 @@
 				D6FA44CD1DBA2C6D000DCF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
