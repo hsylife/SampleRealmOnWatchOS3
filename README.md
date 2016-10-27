@@ -9,7 +9,7 @@ In order to compare it and sendMessage, this project contains code of sendMessag
 
 ## Steps
 1. clone it.
-2. `pod update` for importing realmSwift.
+2. `pod install` for importing realmSwift.
 3. Run and launch the watchOS app.
 4. Launch the iOS app.
 
