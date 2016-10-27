@@ -9,7 +9,7 @@ target 'SampleRealmOnWatchOS3' do
   pod 'RealmSwift'
 end
 
-target ‘SampleWatchApp Extension’ do
+target ‘SampleWatchApp_Extension’ do
   use_frameworks!
   platform :watchos, ‘3.0’
   pod 'RealmSwift'

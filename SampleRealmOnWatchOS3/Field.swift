@@ -8,6 +8,6 @@
 
 import RealmSwift
 
-class Field: Object {
-    dynamic var text: String?
+public class Field: Object {
+    public dynamic var text: String?
 }

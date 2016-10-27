@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SampleWatchApp" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="fileTransfer" id="vyz-eo-H6g"/>
+                        <label width="132" height="32" alignment="left" text="Label" id="Fwu-Uo-L5N"/>
+                        <separator alignment="left" id="0eq-T9-a1q"/>
+                        <label alignment="left" text="sendMessage" id="tb4-HZ-rYv"/>
+                        <label alignment="left" text="Label" id="YT4-sS-wLj"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="YT4-sS-wLj" id="x63-eU-3lX"/>
+                        <outlet property="realmLabel" destination="Fwu-Uo-L5N" id="1IO-qs-oyJ"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>

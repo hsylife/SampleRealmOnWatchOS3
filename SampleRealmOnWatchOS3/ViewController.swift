@@ -8,37 +8,92 @@
 
 import UIKit
 import RealmSwift
+import WatchConnectivity
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, WCSessionDelegate {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var realmTextField: UITextField!
+    @IBOutlet weak var messageTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //initial setting
+        activateSession()
+
+        //initial transfer
+        transferRealmFile()
+        
+        //read realmTextField.txt
+        readRealmTextFieldText()
+    }
+
+    func activateSession(){
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            session.delegate = self
+            session.activate()
+        }
+    }
+    func transferRealmFile(){
+        if let path = Realm.Configuration().fileURL {
+            WCSession.default().transferFile(path, metadata: nil)
+        }
+    }
+
+    func readRealmTextFieldText(){
         let realm = try! Realm()
-        if let myField = realm.objects(Field.self).first{
-            textField.text = myField.text
+        if let firstField = realm.objects(Field.self).first{
+            realmTextField.text = firstField.text
         } else {
             try! realm.write {
                 realm.add(Field())
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func realmTextFieldEditingChanged(_ sender: UITextField) {
+        saveRealmTextFieldText()
+        transferRealmFile()
     }
     
-    @IBAction func editingChanged(_ sender: UITextField) {
-        print("changed")
+    func saveRealmTextFieldText(){
         let realm = try! Realm()
         if let myField = realm.objects(Field.self).first{
             try! realm.write {
-                myField.text = textField.text
+                myField.text = realmTextField.text
             }
-
+            
         }
     }
+    
+    @IBAction func sendMessageEditingChanged(_ sender: UITextField) {
+        sendMessage()
+    }
+    
+    func sendMessage(){
+        if WCSession.default().isReachable {
+            let applicationDict = ["text": messageTextField.text ?? ""]
+            WCSession.default().sendMessage(applicationDict,
+                                            replyHandler: { replyDict in print(replyDict) },
+                                            errorHandler: { error in print(error.localizedDescription)})
+        }
+
+    }
+    
+    //WCSessionDelegate
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("activationDidComplete")
+    }
+    
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+        print("sessionDidBecomeInactive")
+    }
+    
+    public func sessionDidDeactivate(_ session: WCSession) {
+        print("sessionDidDeactivate")
+    }
+    
+    
 }
 
