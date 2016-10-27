@@ -3,7 +3,7 @@ A demo how to use transferFile with realm.
 
 ## Screenshots
 <img src="README_resources/iOS.png" width="400">
-<img src="README_resources/watchOS.png" width="400">
+<img src="README_resources/watchOS.png" width="200">
 
 ## Steps
 1. clone it.
