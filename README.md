@@ -1,14 +1,18 @@
 # SampleRealmOnWatchOS3
 A demo how to use transferFile with realm.
 
-# Steps
+## Screenshots
+<img src="README_resources/iOS.jpeg" width="400">
+<img src="README_resources/watchOS.jpeg" width="400">
+
+## Steps
 1. clone it.
 2. `pod update` for importing realmSwift.
 3. Run and launch the watchOS app.
 4. Launch the iOS app.
 
-# Required
+## Required
 Swift 3, Xcode 8+
 
-# Author
+## Author
 Yuta Hoshino @hsylife
