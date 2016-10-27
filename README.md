@@ -1,5 +1,6 @@
 # SampleRealmOnWatchOS3
-A demo how to use transferFile with realm.
+A demo how to use transferFile with Realm.
+In order to compare it and sendMessage, this project contains code of sendMessage.
 
 ## Screenshots
 <img src="README_resources/iOS.png" width="400">
