@@ -1,5 +1,5 @@
 # SampleRealmOnWatchOS3
-A demo how to use transferFile with Realm. It is for sharing Realm data between iOS 10 and watchOS 3.
+A demo how to use transferFile with Realm in Swift 3. It is for sharing Realm data between iOS 10 and watchOS 3.
 
 In order to compare it and sendMessage, this project contains code of sendMessage.
 
