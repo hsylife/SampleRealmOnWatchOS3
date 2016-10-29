@@ -8,7 +8,7 @@ end
 
 target ‘SampleWatchApp_Extension’ do
   use_frameworks!
-  platform :watchos, ‘3.0’
+  platform :watchos, ‘2.0’
   pod 'RealmSwift'
 end
 

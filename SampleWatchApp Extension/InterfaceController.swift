@@ -33,7 +33,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }
     }
     
-    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    @available(watchOS 2.2, *)
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("activationDidComplete")
     }
 

@@ -35,6 +35,7 @@ class ViewController: UIViewController, WCSessionDelegate {
             session.activate()
         }
     }
+    
     func transferRealmFile(){
         if let path = Realm.Configuration().fileURL {
             WCSession.default().transferFile(path, metadata: nil)
@@ -82,15 +83,16 @@ class ViewController: UIViewController, WCSessionDelegate {
     }
     
     //WCSessionDelegate
-    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    @available(iOS 9.3, *)
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("activationDidComplete")
     }
     
-    public func sessionDidBecomeInactive(_ session: WCSession) {
+    func sessionDidBecomeInactive(_ session: WCSession) {
         print("sessionDidBecomeInactive")
     }
     
-    public func sessionDidDeactivate(_ session: WCSession) {
+    func sessionDidDeactivate(_ session: WCSession) {
         print("sessionDidDeactivate")
     }
     
