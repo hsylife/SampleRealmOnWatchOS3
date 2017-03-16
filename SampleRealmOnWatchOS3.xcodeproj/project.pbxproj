@@ -314,7 +314,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Yuta Hoshino";
 				TargetAttributes = {
 					D64D9C211DB8F5BF00E17C6B = {
