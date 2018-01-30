@@ -9,5 +9,5 @@
 import RealmSwift
 
 public class Field: Object {
-    public dynamic var text: String?
+    @objc public dynamic var text: String?
 }

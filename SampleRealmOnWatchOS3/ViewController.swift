@@ -30,7 +30,7 @@ class ViewController: UIViewController, WCSessionDelegate {
 
     func activateSession(){
         if WCSession.isSupported() {
-            let session = WCSession.default()
+            let session = WCSession.default
             session.delegate = self
             session.activate()
         }
@@ -38,7 +38,7 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     func transferRealmFile(){
         if let path = Realm.Configuration().fileURL {
-            WCSession.default().transferFile(path, metadata: nil)
+            WCSession.default.transferFile(path, metadata: nil)
         }
     }
 
@@ -73,9 +73,9 @@ class ViewController: UIViewController, WCSessionDelegate {
     }
     
     func sendMessage(){
-        if WCSession.default().isReachable {
+        if WCSession.default.isReachable {
             let applicationDict = ["text": messageTextField.text ?? ""]
-            WCSession.default().sendMessage(applicationDict,
+            WCSession.default.sendMessage(applicationDict,
                                             replyHandler: { replyDict in print(replyDict) },
                                             errorHandler: { error in print(error.localizedDescription)})
         }
